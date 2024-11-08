@@ -19,7 +19,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.0",
-    "auxmoney/opentracing-bundle-core": "^v1.0",
+    "auxmoney/opentracing-bundle-core": "dev-master",
     "opentracing/opentracing": "^1.0.1",
     "php-amqplib/rabbitmq-bundle": "^2.10.0"
   },
@@ -65,5 +65,11 @@
       "vendor/auxmoney/opentracing-bundle-core/Tests/Functional/Scripts/teardown.sh"
     ],
     "phpstan": "vendor/bin/phpstan analyse --no-progress"
+  },
+  "repositories": {
+    "core-php-7": {
+      "type": "vcs",
+      "url": "https://github.com/pronata/OpentracingBundle-core.git"
+    }
   }
 }
